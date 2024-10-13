@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com condição em JS</title>
+</head>
+<body>
+    <h1>Tu foi multado irmão?</h1>
+    Velocidade do teu carro seu lixo <input type="number" name="velocidade" id="velocidadei"> KM/H
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var vel = document.getElementById('velocidadei')
+            var res = document.querySelector('div#res')
+            var vel = Number(vel.value)
+            res.innerHTML = (`A sua velocidade atual é de <strong>${vel}Km/H</strong>`)
+
+            if (vel > 60) {
+                res.innerHTML += (`boa conseguiu uma MULTA`)
+            }
+        }
+    </script>
+</body>
+</html>

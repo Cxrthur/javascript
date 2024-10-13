@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de peso em JS</title>
+</head>
+<body>
+    <h1>Faz a média</h1>
+    <p>Bota dois numeros pra fazer a média</p>
+    <input type="number" name="medianome1" id="imedia1">
+    <input type="number" name="meidanome2" id="imedia2">
+    <input type="button" value="enviar" onclick="calcular()">
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function calcular() {
+
+            var media1 = document.getElementById('imedia1')
+            var media1 = Number(media1.value)
+
+            var media2 = document.getElementById('imedia2')
+            var media2 = Number (media2.value)
+
+            var soma = media1 + media2
+
+            var media = soma / 2
+
+            resposta.innerHTML = (`A média desses números aí é de <strong>${media}</strong>`)
+        }
+    </script>
+</body>
+</html>

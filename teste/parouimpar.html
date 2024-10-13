@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número par ou impar</title>
+</head>
+<body>
+    <h1>Digite um número e descubra se ele é par ou impar</h1>
+    <input type="number" name="descubra" id="idescubra">
+    <input type="button" value="enviar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+        var num = document.getElementById('idescubra')
+        var num = Number(num.value)
+        
+        if(num % 2 == 1) {
+            res.innerHTML = (`O número <strong>${num} é impar</strong>`)
+        } else {
+            res.innerHTML = (`O número <strong>${num} é par</strong>`)
+        }
+    }
+    </script>
+</body>
+</html>

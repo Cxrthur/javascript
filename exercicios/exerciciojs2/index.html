@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de identidade</h1>
+    </header>
+    <section>
+        <div id="formularios">
+            <p>Ano de nascimento: <input type="number" name="dtnascimento" id="anonascimento" placeholder="Ex: 1930"></p>
+            <p>
+                Gênero:
+                <input type="radio" name="genero" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="outro">
+                <label for="outro">Outro</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div id="resposta">
+
+        </div>
+    </section>
+    <footer>
+        <p><a href="https://www.instagram.com/c.asbrizolla/" target="_blank">@c.asbrizolla</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

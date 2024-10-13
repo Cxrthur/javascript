@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightsteelblue;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    font-size: 1.2em;
+    transition-duration: 0.2s;
+}

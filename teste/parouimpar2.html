@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGORA VAI SEM ERRO FI</title>
+</head>
+<body>
+    <h1>Vou fazer if e else</h1>
+    <p>Sem erro fi sem abrir o navegador pra ver vai ser tudo nos trinque</p>
+    <input type="number" name="parouimpar" id="iparouimpar">
+    <input type="submit" value="enviar" onclick="calcular()">
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var numero = document.getElementById('iparouimpar')
+            var numero = Number(numero.value)
+
+            if(numero % 2 == 1) {
+                resposta.innerHTML = (`O número é ímpar`)
+            } else {
+                resposta.innerHTML = (`O número é par`)
+            }
+        }
+    </script>
+</body>
+</html>

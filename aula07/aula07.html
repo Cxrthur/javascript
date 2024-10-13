@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vai ter soma??</title>
+    <style>
+        input {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ele disse que vai ter soma</h1>
+
+    <input type="number" name="texto1" id="textoi1"> +
+    <input type="number" name="texto2" id="textoi2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="resultado">Resultado</div>
+
+    <script>
+        function somar() {
+        var vn1 = document.getElementById('textoi1')
+        var vn2 = document.getElementById('textoi2')
+        var resultado = document.getElementById('resultado')
+        var nn1 = Number(vn1.value)
+        var nn2 = Number(vn2.value)
+        var soma = nn1 + nn2
+        resultado.innerHTML = `A soma entre ${nn1} e ${nn2} é igual a <strong>${soma}</strong>`
+        }
+    </script>
+
+</body>
+</html>
